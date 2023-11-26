@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import './index.css'
+import SlotM from "./SlotM"
+import Matching from "./Matching";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <div className="wrapper">
+    <h1 className="heading"> 🎰 <span style={{fontWeight:'bold'}}>Slot machine Game</span> 🎰 </h1>
+     <SlotM x={"😄"} y={"😄"} z={"😄"} />
+     <hr/>
+     <SlotM x={" 👍 "} y={" 🍊 "} z={" 🍇 "} />
+     <hr/>
+     <SlotM x={" 👶 "} y={" 👶 "} z={" 👶 "} />
+     <hr/>
+     <SlotM x={" 🍎 "} y={" 👶 "} z={" 🌴 "} />
+     <hr/>
+     <SlotM x={" 🥭 "} y={" 🥭 "} z={" 🥭 "} />
+     </div>
+     </>
+    );
 }
 
 export default App;
