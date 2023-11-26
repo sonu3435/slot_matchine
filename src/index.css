@@ -11,13 +11,20 @@ body {
 .wrapper{
   width:30%;
   height: fit-content;
-  margin: auto;
+  /* margin: auto; */
+  position: relative;
+  left: 35%;
+  top: 50px;
   border: 1px solid ;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  /* border-radius: 10px; */
 }
 
 .heading{
   padding: 3rem;
   margin: 0;
+  border-top-right-radius: 1.5rem;
   text-align: center;
   text-transform: capitalize;
   color: rgb(89, 80, 80);
